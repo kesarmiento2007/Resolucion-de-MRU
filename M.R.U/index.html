@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.R.U</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preload" as="style" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" as="style" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1 class="centrar-texto">Movimiento Rectilíneo Uniforme (M.R.U)</h1>
+
+    <div class="columna">
+
+        <div class="unidad">
+            <input type="number" id="d" min="1" placeholder="Distancia">
+            <select name="distancia" id="distancia">
+                <option>km</option>
+                <option selected>m</option>
+            </select>
+        </div>
+
+        <div class="unidad">
+            <input type="number" id="v" min="1" placeholder="Velocidad">
+            <select name="velocidad" id="velocidad">
+                <option selected>km/h</option>
+                <option>m/s</option>
+            </select>
+        </div>
+
+        <div class="unidad">
+            <input type="number" id="t" min="1" placeholder="Tiempo">
+            <select name="tiempo" id="tiempo">
+                <option>h</option>
+                <option>min</option>
+                <option selected>s</option>
+            </select>
+        </div>
+
+        <button class="resultado"><span>Resultado</span></button>
+        <button class="borrar">Borrar</button>
+
+    </div>
+
+
+    <script src="js/fisica.js"></script>
+</body>
+</html>
